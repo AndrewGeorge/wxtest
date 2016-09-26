@@ -1,0 +1,20 @@
+<!--logs.wxml-->
+<!--logs.wxml-->
+<view class="container">
+  <text class="news-title">{{title}}</text>
+  <text class="news-info">暂时找不到WebView的组件接口，于是不能加载网页数据</text>
+</view>
+  //事件处理函数
+  bindViewTap: function(event) {
+    wx.navigateTo({
+      url: '../detail/detail?title='+event.currentTarget.dataset.newsTitle
+    })
+  }
+
+//index.js
+   //事件处理函数
+  bindViewTap: function(event) {
+    wx.navigateTo({
+      url: '../detail/detail?title='+event.currentTarget.dataset.newsTitle
+    })
+  }
